@@ -30,7 +30,7 @@ function PasswordGenerator() {
     }
 
     function generatePassword() {
-        let url = `http://security-password-production.up.railway.app/api/v1/password?uppercase=${uppercase}&lowercase=${lowercase}&symbols=${symbols}&numbers=${numbers}&size=${chars}`;
+        let url = `https://security-password-production.up.railway.app/api/v1/password?uppercase=${uppercase}&lowercase=${lowercase}&symbols=${symbols}&numbers=${numbers}&size=${chars}`;
         fetch(url).then(res => {
             return res.json()
         })
