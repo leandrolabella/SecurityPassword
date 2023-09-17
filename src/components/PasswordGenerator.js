@@ -83,7 +83,7 @@ function PasswordGenerator() {
                     <span className='generator-size-span'>QUANTIDADE DE CARACTERES</span>
                 </label>
                 <div className='generator-range-container'>
-                    <input type="range" min="6" max="30" step="1" value={chars} onChange={updateSizeInput} className='generator-input-range'></input>
+                    <input type="range" min="6" max="30" step="1" value={chars} onChange={updateSizeInput}></input>
                 </div>
             </div>
             <button onClick={generatePassword} className='generate-pass-button'>GERAR SENHA</button>
