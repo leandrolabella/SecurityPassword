@@ -41,17 +41,11 @@ function PasswordGenerator() {
 
     return (
         <div>
-            <header>
-                <div className='header-container'>
-                    <span className='span-checked'>PASSWORD GENERATOR</span>
-                    <span className='span-no-checked'>PASSWORD CHECK</span>
-                </div>
-            </header>
             <div className='generator-container'>
                 <div className='generated-input-container'>
-                    <input type="text" disabled={true} value={generatedPassword} className='generator-input'></input>
+                    <input type='text' disabled={true} value={generatedPassword} className='generator-input'></input>
                     <div class="tooltip">
-                        <button onClick={copyToClipboard} onMouseOut={mouseOut} className='generator-button-copy'><span class="tooltiptext" id="myTooltip">Copiar para área de transferência</span>COPIAR</button>
+                        <button onClick={copyToClipboard} onMouseOut={mouseOut} className='generator-button-copy'><span class="tooltiptext" id='myTooltip'>Copiar para área de transferência</span>COPIAR</button>
                     </div>
                 </div>
                 <div className='generator-input-container'>
